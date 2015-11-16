@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags always come first -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="http://v4-alpha.getbootstrap.com/assets/css/docs.min.css">
+	<style type="text/css">
+	h2{
+		margin-top: 3rem;
+	}
+
+	</style>
+</head>
+<body>
+	<div class="jumbotron">
+		<h1 class="display-3">Hello, world!</h1>
+		<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+		<hr class="m-y-md">
+		<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+		<p class="lead">
+			<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+		</p>
+	</div>
+
+
+	<div class="jumbotron jumbotron-fluid">
+		<div class="container">
+			<h1 class="display-3">Fluid jumbotron</h1>
+			<p class="lead">This is a modified jumbotron that occupies the entire horizontal space of it's parent.</p>
+			<hr class="m-y-md">
+			<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+			<p class="lead">
+				<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+			</p>
+		</div>
+	</div>
+	
+	
+	<h2>按鈕</h2>
+	<div class="bd-example" data-example-id>
+		<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+		<button type="button" class="btn btn-primary">主要</button>
+
+		<!-- Secondary, outline button -->
+		<button type="button" class="btn btn-secondary">次要</button>
+
+		<!-- Indicates a successful or positive action -->
+		<button type="button" class="btn btn-success">成功</button>
+
+		<!-- Indicates caution should be taken with this action -->
+		<button type="button" class="btn btn-warning">警告</button>
+
+		<!-- Indicates a dangerous or potentially negative action -->
+		<button type="button" class="btn btn-danger">危險</button>
+
+		<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+		<button type="button" class="btn btn-link">像連結的按鈕</button>
+	</div>
+	<h2>tag按鈕</h2>
+	<div class="bd-example">
+		<a class="btn btn-primary" href="#" role="button">像按鈕的連結</a>		
+		<button class="btn btn-primary" type="submit">Button</button>
+		<input class="btn btn-primary" type="button" value="Input">
+		<input class="btn btn-primary" type="submit" value="Submit">
+	</div>
+	<h2>Outline按鈕</h2>
+	<p>
+		按鈕外面有框框 <code>.btn-*-outline</code>
+	</p>
+	<div class="bd-example">
+		<button type="button" class="btn btn-primary-outline">主要</button>
+		<button type="button" class="btn btn-secondary-outline">次要</button>
+		<button type="button" class="btn btn-success-outline">成功</button>
+		<button type="button" class="btn btn-warning-outline">警告</button>
+		<button type="button" class="btn btn-danger-outline">危險</button>
+	</div>
+
+	<h2>大小</h2>
+	<div class="bd-example">
+		<p>增加 <code>.btn-lg</code> 或是 <code>.btn-sm</code></p>
+		<button type="button" class="btn btn-primary btn-lg">大按鈕</button>
+		<button type="button" class="btn btn-secondary btn-sm">小按鈕</button>
+	</div>
+	<div class="bd-example">
+		<p>by adding <code>.btn-block</code></p>
+		<button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+		<button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
+	</div>
+	<h2>活躍狀態</h2>
+	<div class="bd-example">
+		<p>用比較深的顏色,比較深色的border來表示是active, with <code>active</code></p>
+		<a href="#" class="btn btn-primary btn-lg active" role="button">Primary link</a>
+		<a href="#" class="btn btn-secondary btn-lg active" role="button">Link</a>
+
+	</div>
+	
+	<h2>禁用狀態</h2>
+	<div class="bd-example">
+		<p><code>disable</code></p>
+		<p class="bd-callout"><strong>Heads up!</strong> IE9 and below render disabled buttons with gray, shadowed text that we can’t override.</p>
+		<button type="button" class="btn btn-primary btn-lg" disabled>主要</button>
+		<button type="button" class="btn btn-secondary btn-lg" disabled>次要</button>
+	</div>
+	<div class="bd-example">
+		<p><code>&lt;a&gt;</code> 不支援<code>disabled</code>屬性, 要加 <code>.disabled</code> class to fake it.</p>
+		<a href="#" class="btn btn-primary btn-lg disabled" role="button">Primary link</a>
+		<a href="#" class="btn btn-secondary btn-lg disabled" role="button">Link</a>
+	</div>
+
+	<h2>Toggle states</h2>
+	<div class="bd-example">
+		<p>Add<code>data-toggle="button"</code> to toggle a button’s <code>active</code> state. If you’re pre-toggling a button, you must manually add the <code>.active</code> class and <code>aria-pressed="true"</code> to the <code>&lt;button&gt;</code>.</p>
+		
+		<button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">Single toggle</button>
+	</div>
+	
+	<h2>Checkbox and radio buttons</h2>
+	<div class="bd-example">
+		<p></p>
+		<div class="btn-group" data-toggle="buttons">
+			<label class="btn btn-primary active">
+				<input type="checkbox" checked autocomplete="off"> Checkbox 1 (pre-checked)
+			</label>
+			<label class="btn btn-primary">
+				<input type="checkbox" autocomplete="off"> Checkbox 2
+			</label>
+			<label class="btn btn-primary">
+				<input type="checkbox" autocomplete="off"> Checkbox 3
+			</label>
+		</div>
+		
+	</div>
+
+	<div class="bd-example">
+		<div class="btn-group" data-toggle="buttons">
+			<label class="btn btn-primary active">
+				<input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1 (preselected)
+			</label>
+			<label class="btn btn-primary">
+				<input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
+			</label>
+			<label class="btn btn-primary">
+				<input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
+			</label>
+		</div>
+	</div>
+
+	<div class="bd-example">
+		<p>with <code>.btn</code> in <code>.btn-group</code></p>
+		<div class="btn-group" role="group" aria-label="Basic example">
+			<button type="button" class="btn btn-secondary">Left</button>
+			<button type="button" class="btn btn-secondary">Middle</button>
+			<button type="button" class="btn btn-secondary">Right</button>
+		</div>
+	</div>
+
+	<h2>Button toolbar</h2>
+	<div class="bd-example">
+		<p>Combine sets of button groups into button toolbars for more complex components.</p>
+		<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+			<div class="btn-group" role="group" aria-label="First group">
+				<button type="button" class="btn btn-secondary">1</button>
+				<button type="button" class="btn btn-secondary">2</button>
+				<button type="button" class="btn btn-secondary">3</button>
+				<button type="button" class="btn btn-secondary">4</button>
+			</div>
+			<div class="btn-group" role="group" aria-label="Second group">
+				<button type="button" class="btn btn-secondary">5</button>
+				<button type="button" class="btn btn-secondary">6</button>
+				<button type="button" class="btn btn-secondary">7</button>
+			</div>
+			<div class="btn-group" role="group" aria-label="Third group">
+				<button type="button" class="btn btn-secondary">8</button>
+			</div>
+		</div>
+	</div>
+	<h2>Sizing</h2>
+	<div class="bd-example">
+		<p>Instead of applying button sizing classes to every button in a group, just add .btn-group-* to each .btn-group, including each one when nesting multiple groups.</p>
+		//TODO:
+	</div>
+	<h2>Nesting</h2>
+	<div class="bd-example">
+		<p>Place a .btn-group within another .btn-group when you want dropdown menus mixed with a series of buttons.</p>
+		<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+			<button type="button" class="btn btn-secondary">1</button>
+			<button type="button" class="btn btn-secondary">2</button>
+
+			<div class="btn-group" role="group">
+				<button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Dropdown
+				</button>
+				<div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+					<a class="dropdown-item" href="#">Dropdown link</a>
+					<a class="dropdown-item" href="#">Dropdown link</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<h2>Vertical variation</h2>
+	<div class="bd-example">
+		<p>Make a set of buttons appear vertically stacked rather than horizontally. Split button dropdowns are not supported here.</p>
+		<div class="btn-group-vertical">
+			
+		</div>
+	</div>
+
+
+	<!-- jQuery first, then Bootstrap JS. -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+
+</body>
+</html>
