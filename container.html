@@ -186,7 +186,7 @@
 	</div>
 	<h2>Nesting</h2>
 	<div class="bd-example">
-		<p>Place a .btn-group within another .btn-group when you want dropdown menus mixed with a series of buttons.</p>
+		<p>Place a <code>.btn-group</code> within another <code>.btn-group</code> when you want dropdown menus mixed with a series of buttons.</p>
 		<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
 			<button type="button" class="btn btn-secondary">1</button>
 			<button type="button" class="btn btn-secondary">2</button>
@@ -206,10 +206,221 @@
 	<div class="bd-example">
 		<p>Make a set of buttons appear vertically stacked rather than horizontally. Split button dropdowns are not supported here.</p>
 		<div class="btn-group-vertical">
-			
+			<button type="button" class="btn btn-secondary">1</button>
+			<button type="button" class="btn btn-secondary">2</button>
+			<div class="btn-group" role="group">
+				<button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Dropdown
+				</button>
+				<div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+					<a class="dropdown-item" href="#">Dropdown link</a>
+					<a class="dropdown-item" href="#">Dropdown link</a>
+				</div>
+			</div>
 		</div>
 	</div>
 
+	<h2>單按鈕 dropdowns</h2>
+	<div class="bd-example">
+		<p>Turn a button into a dropdown toggle with some basic markup changes.</p>
+		<!-- Single button -->
+		<div class="btn-group">
+			<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Action
+			</button>
+			<div class="dropdown-menu">
+				<a class="dropdown-item" href="#">Action</a>
+				<a class="dropdown-item" href="#">Another action</a>
+				<a class="dropdown-item" href="#">Something else here</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="#">Separated link</a>
+			</div>
+		</div>
+	</div>
+
+	<h2>Split button dropdowns</h2>
+	<div class="bd-example">
+		<p>Similarly, create split button dropdowns with the same markup changes, only with a separate button.</p>
+		<!-- Split button -->
+		<div class="btn-group">
+			<button type="button" class="btn btn-danger">Action</button>
+			<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="sr-only">Toggle Dropdown</span>
+			</button>
+			<div class="dropdown-menu">
+				<a class="dropdown-item" href="#">Action</a>
+				<a class="dropdown-item" href="#">Another action</a>
+				<a class="dropdown-item" href="#">Something else here</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="#">Separated link</a>
+			</div>
+		</div>
+	</div>
+
+	<h2>Sizing</h2>
+	<div class="bd-example">
+		<p>Button dropdowns work with buttons of all sizes.</p>
+		<!-- Large button group -->
+		<div class="btn-group">
+			<button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Large button
+			</button>
+			<div class="dropdown-menu">
+				<a class="dropdown-item" href="#">Action</a>
+				<a class="dropdown-item" href="#">Another action</a>
+				<a class="dropdown-item" href="#">Something else here</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="#">Separated link</a>
+			</div>
+		</div>
+
+		<!-- Small button group -->
+		<div class="btn-group">
+			<button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Small button
+			</button>
+			<div class="dropdown-menu">
+				<a class="dropdown-item" href="#">Action</a>
+				<a class="dropdown-item" href="#">Another action</a>
+				<a class="dropdown-item" href="#">Something else here</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="#">Separated link</a>
+			</div>
+		</div>
+	</div>
+
+
+	<h2>Dropup變化</h2>
+	<div class="bd-example">
+		<p>by adding <code>.dropup</code></p>
+		<div class="btn-group dropup">
+			<button type="button" class="btn btn-secondary">Dropup</button>
+			<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="sr-only">Toggle Dropdown</span>
+			</button>
+			<div class="dropdown-menu">
+				<!-- Dropdown menu links -->
+				<a class="dropdown-item" href="#">Action</a>
+				<a class="dropdown-item" href="#">Another action</a>
+				<a class="dropdown-item" href="#">Something else here</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="#">Separated link</a>
+			</div>
+		</div>
+	</div>
+
+	<h2>表格控制</h2>
+	<div class="bd-example">
+		<p>記住,因為Bootstrap利用HTML5文件型態,所有輸入必須要有一個<code>type</code>屬性</p>
+		<form>
+			<fieldset class="form-group">
+				<label for="exampleInputEmail1">信箱住址</label>
+				<input type="email" class="form-control" id="exampleInputEmail1" placeholder="輸入信箱">
+				<small class="text-muted">我們不會分享你的信箱給其他人</small>
+			</fieldset>
+			<fieldset class="form-group">
+				<label for="exampleInputPassword1">密碼</label>
+				<input type="password" class="form-control" id="exampleInputPassword1" placeholder="密碼">
+			</fieldset>
+			<fieldset class="form-group">
+				<label for="exampleSelect1">下拉式選單範例</label>
+				<select class="form-control" id="exampleSelect1">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</select>
+			</fieldset>
+			<fieldset class="form-group">
+				<label for="exampleSelect2">多選下拉式選單範例</label>
+				<select multiple class="form-control" id="exampleSelect2">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</select>
+			</fieldset>
+			<fieldset class="form-group">
+				<label for="exampleTextarea">textarea範例</label>
+				<textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+			</fieldset>
+			<fieldset class="form-group">
+				<label for="exampleInputFile">檔案</label>
+				<input type="file" class="form-control-file" id="exampleInputFile">
+				<small class="text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+			</fieldset>
+			<div class="radio">
+				<label>
+					<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+					Option one is this and that&mdash;be sure to include why it's great
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+					Option two can be something else and selecting it will deselect option one
+				</label>
+			</div>
+			<div class="radio disabled">
+				<label>
+					<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+					Option three is disabled
+				</label>
+			</div>
+			<div class="checkbox">
+				<label>
+					<input type="checkbox"> 點我
+				</label>
+			</div>
+			<button type="submit" class="btn btn-primary">送出</button>
+		</form>
+	</div>
+
+	<h2>Form groups</h2>
+	<div class="bd-example">
+		<form>
+			<fieldset class="form-group">
+				<label for="formGroupExampleInput">Example label</label>
+				<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+			</fieldset>
+			<fieldset class="form-group">
+				<label for="formGroupExampleInput2">Another label</label>
+				<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+			</fieldset>
+		</form>
+	</div>
+
+	<h2>inline forms</h2>
+	<h2>Visible labels</h2>
+	<div class="bd-example">
+		<form class="form-inline">
+			<div class="form-group">
+				<label for="exampleInputName2">姓名</label>
+				<input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+			</div>
+			<div class="form-group">
+				<label for="exampleInputEmail2">信箱</label>
+				<input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+			</div>
+			<button type="submit" class="btn btn-primary">寄出邀請</button>
+		</form>
+	</div>
+	<h2>Hidden labels</h2>
+	<div class="bd-example">
+		<form class="form-inline">
+			<div class="form-group">
+				<label for="exampleInputName2">姓名</label>
+				<input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+			</div>
+			<div class="form-group">
+				<label for="exampleInputEmail2">信箱</label>
+				<input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+			</div>
+			<button type="submit" class="btn btn-primary">寄出邀請</button>
+		</form>
+	</div>
 
 	<!-- jQuery first, then Bootstrap JS. -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
