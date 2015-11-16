@@ -426,6 +426,269 @@
 			<button type="submit" class="btn btn-primary">登入</button>
 		</form>
 	</div>
+	<div class="bd-example">
+		<form class="form-inline">
+			<div class="form-group">
+				<label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+				<div class="input-group">
+					<div class="input-group-addon">$</div>
+					<input type="text" class="form-control" id="exampleInputAmount" placeholder="數量">
+					<div class="input-group-addon">.00</div>
+				</div>
+			</div>
+			<button type="submit" class="btn btn-primary">Transfer cash</button>
+		</form>
+	</div>
+
+	<h2>Using the Grid</h2>
+	<div class="bd-example">
+		<form>
+			<div class="form-group row">
+				<label for="inputEmail3" class="col-sm-2 form-control-label">信箱</label>
+				<div class="col-sm-10">
+					<input type="email" class="form-control" id="inputEmail3" placeholder="信箱">
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="inputPassword3" class="col-sm-2 form-control-label">密碼</label>
+				<div class="col-sm-10">
+					<input type="password" class="form-control" id="inputPassword3" placeholder="密碼">
+				</div>
+			</div>
+			<div class="form-group row">
+				<label class="col-sm-2">Radios</label>
+				<div class="col-sm-10">
+					<div class="radio">
+						<label>
+							<input type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+							Option one is this and that&mdash;be sure to include why it's great
+						</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" name="gridRadios" id="gridRadios2" value="option2">
+							Option two can be something else and selecting it will deselect option one
+						</label>
+					</div>
+					<div class="radio disabled">
+						<label>
+							<input type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+							Option three is disabled
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-group row">
+				<label class="col-sm-2">Checkbox</label>
+				<div class="col-sm-10">
+					<div class="checkbox">
+						<label>
+							<input type="checkbox"> Check me out
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-group row">
+				<div class="col-sm-offset-2 col-sm-10">
+					<button type="submit" class="btn btn-secondary">登入</button>
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<h2>Checkboxes and radios</h2>
+	<h2>Default (stacked)</h2>
+	<div class="bd-example">
+		<div class="checkbox">
+			<label>
+				<input type="checkbox" value="">
+				Option one is this and that&mdash;be sure to include why it's great
+			</label>
+		</div>
+		<div class="checkbox disabled">
+			<label>
+				<input type="checkbox" value="" disabled>
+				Option two is disabled
+			</label>
+		</div>
+
+		<div class="radio">
+			<label>
+				<input type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+				Option one is this and that&mdash;be sure to include why it's great
+			</label>
+		</div>
+		<div class="radio">
+			<label>
+				<input type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+				Option two can be something else and selecting it will deselect option one
+			</label>
+		</div>
+		<div class="radio disabled">
+			<label>
+				<input type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+				Option three is disabled
+			</label>
+		</div>
+	</div>
+
+	<h2>Inline</h2>
+	<div class="bd-example">
+		<p>Use the <code>.checkbox-inline</code> or <code>.radio-inline</code>classes</p>
+		<label class="checkbox-inline">
+			<input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+		</label>
+		<label class="checkbox-inline">
+			<input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+		</label>
+		<label class="checkbox-inline">
+			<input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+		</label>
+	</div>
+
+	<h2>Without labels</h2>
+	<div class="bd-example">
+		<p>Should you have no text within the <label>, the input is positioned as you’d expect. Currently only works on non-inline checkboxes and radios.</p>
+		<div class="checkbox">
+			<label>
+				<input type="checkbox" id="blankCheckbox" value="option1">
+			</label>
+		</div>
+		<div class="radio">
+			<label>
+				<input type="radio" name="blankRadio" id="blankRadio1" value="option1">
+			</label>
+		</div>
+	</div>
+
+
+
+	<h2>靜態控制</h2>
+	<div class="bd-example">
+		<p>當你需要在你表格裡面的label的旁邊放一個純文字,使用<code>.form-control-static</code>在一個&lt;p&gt;上</p>
+		<form class="form-horizontal">
+			<div class="form-group">
+				<label class="col-sm-2 control-label">Email</label>
+				<div class="col-sm-10">
+					<p class="form-control-static">email@example.com</p>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputPassword" class="col-sm-2 control-label">Password</label>
+				<div class="col-sm-10">
+					<input type="password" class="form-control" id="inputPassword" placeholder="Password">
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="bd-example">
+		<form class="form-inline">
+			<div class="form-group">
+				<label class="sr-only">信箱</label>
+				<p class="form-control-static">email@example.com</p>
+			</div>
+			<div class="form-group">
+				<label for="inputPassword2" class="sr-only">Password</label>
+				<input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+			</div>
+			<button type="submit" class="btn btn-primary">Confirm identity</button>
+		</form>
+	</div>
+
+	<h2>Disabled states</h2>
+	<div class="bd-example">
+		<form>
+			<fieldset disabled>
+				<div class="form-group">
+					<label for="disabledTextInput">Disabled input</label>
+					<input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+				</div>
+				<div class="form-group">
+					<label for="disabledSelect">Disabled select menu</label>
+					<select id="disabledSelect" class="form-control">
+						<option>Disabled select</option>
+					</select>
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox"> Can't check this
+					</label>
+				</div>
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</fieldset>
+		</form>
+	</div>
+
+	<h2>Readonly inputs</h2>
+	<div class="bd-example">
+		<input class="form-control" type="text" placeholder="Readonly input here…" readonly>
+	</div>
+
+	<h2>Column sizing</h2>
+	<div class="bd-example">
+		<div class="row">
+			<div class="col-xs-2">
+				<input type="text" class="form-control" placeholder=".col-xs-2">
+			</div>
+			<div class="col-xs-3">
+				<input type="text" class="form-control" placeholder=".col-xs-3">
+			</div>
+			<div class="col-xs-4">
+				<input type="text" class="form-control" placeholder=".col-xs-4">
+			</div>
+		</div>
+	</div>
+
+	<h2>Help text</h2>
+	<div class="bd-example">
+		<small class="text-muted">
+			Some inline text with a small tag looks like this.
+		</small>
+	</div>
+
+
+	<h2>驗證</h2>
+	<div class="bd-example">
+		<p>Bootstrap includes validation styles for error, warning, and success states on form controls. To use, add <code>.has-warning</code>, <code>.has-error</code>, or <code>.has-success</code> to the parent element. Any <code>.control-label</cdoe>, <code>.form-control</code>, and <code>.text-help</code> within that element will receive the validation styles.</p>
+		
+		<div class="form-group has-success">
+			<label class="control-label" for="inputSuccess1">Input with success</label>
+			<input type="text" class="form-control form-control-success" id="inputSuccess1">
+		</div>
+		<div class="form-group has-warning">
+			<label class="control-label" for="inputWarning1">Input with warning</label>
+			<input type="text" class="form-control form-control-warning" id="inputWarning1">
+		</div>
+		<div class="form-group has-error">
+			<label class="control-label" for="inputError1">Input with error</label>
+			<input type="text" class="form-control form-control-error" id="inputError1">
+		</div>
+
+		<div class="has-success">
+			<div class="checkbox">
+				<label>
+					<input type="checkbox" id="checkboxSuccess" value="option1">
+					Checkbox with success
+				</label>
+			</div>
+		</div>
+		<div class="has-warning">
+			<div class="checkbox">
+				<label>
+					<input type="checkbox" id="checkboxWarning" value="option1">
+					Checkbox with warning
+				</label>
+			</div>
+		</div>
+		<div class="has-error">
+			<div class="checkbox">
+				<label>
+					<input type="checkbox" id="checkboxError" value="option1">
+					Checkbox with error
+				</label>
+			</div>
+		</div>
+	</div>
 
 	<!-- jQuery first, then Bootstrap JS. -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
