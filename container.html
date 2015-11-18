@@ -7,7 +7,7 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="dist/css/bootstrap.css">
 	<link rel="stylesheet" href="http://v4-alpha.getbootstrap.com/assets/css/docs.min.css">
 	<style type="text/css">
 	h2{
@@ -39,10 +39,79 @@
 			</p>
 		</div>
 	</div>
+
+	<h2>Grid system</h2>
+	<div class="bd-example">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-1">.col-md-1</div>
+				<div class="col-md-1">.col-md-1</div>
+				<div class="col-md-1">.col-md-1</div>
+				<div class="col-md-1">.col-md-1</div>
+				<div class="col-md-1">.col-md-1</div>
+				<div class="col-md-1">.col-md-1</div>
+				<div class="col-md-1">.col-md-1</div>
+				<div class="col-md-1">.col-md-1</div>
+				<div class="col-md-1">.col-md-1</div>
+				<div class="col-md-1">.col-md-1</div>
+				<div class="col-md-1">.col-md-1</div>
+				<div class="col-md-1">.col-md-1</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8">.col-md-8</div>
+				<div class="col-md-4">.col-md-4</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">.col-md-4</div>
+				<div class="col-md-4">.col-md-4</div>
+				<div class="col-md-4">.col-md-4</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">.col-md-6</div>
+				<div class="col-md-6">.col-md-6</div>
+			</div>
+		</div>
+	</div>
 	
-	
+	<h2>Media object</h2>
+	<div class="bd-example">
+		<div class="media">
+			<a class="media-left" href="#">
+				<img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image">
+			</a>
+			<div class="media-body">
+				<h4 class="media-heading">Media heading</h4>
+				Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+			</div>
+		</div>
+	</div>
+
+	<h2>Nesting</h2>
+	<div class="bd-example">
+		<div class="media">
+			<div class="media-left">
+				<a href="#">
+					<img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image">
+				</a>
+			</div>
+			<div class="media-body">
+				<h4 class="media-heading">Media heading</h4>
+				Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+				<div class="media">
+					<a class="media-left" href="#">
+						<img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image">
+					</a>
+					<div class="media-body">
+						<h4 class="media-heading">Nested media heading</h4>
+						Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<h2>按鈕</h2>
-	<div class="bd-example" data-example-id>
+	<div class="bd-example">
 		<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
 		<button type="button" class="btn btn-primary">主要</button>
 
@@ -61,6 +130,7 @@
 		<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
 		<button type="button" class="btn btn-link">像連結的按鈕</button>
 	</div>
+
 	<h2>tag按鈕</h2>
 	<div class="bd-example">
 		<a class="btn btn-primary" href="#" role="button">像按鈕的連結</a>		
@@ -1685,7 +1755,7 @@
 
 	<!-- jQuery first, then Bootstrap JS. -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+	<script src="dist/js/bootstrap.js"></script>
 
 	<!-- holder.js -->
 	<script src="holder.js"></script>
